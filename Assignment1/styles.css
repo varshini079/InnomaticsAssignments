@@ -1,0 +1,33 @@
+
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.table {
+    width: 100%; 
+    border-collapse: collapse;
+    table-layout: fixed; 
+}
+
+.table td, .table th {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.table thead tr th {
+    text-align: center;
+    background-color: yellow;
+}
+.table tbody tr th {
+    background-color: yellow;
+}
+.table tbody tr th:nth-last-child(1) {
+    background-color: pink;
+}
+.table tbody tr td:first-child{
+    background-color: gainsboro;
+}
