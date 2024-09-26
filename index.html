@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="styles.css"></link>
+</head>
+<body>
+    <div class="main">
+        <h2>Company Directory Portal</h2>
+        <form class="form">
+            <h3>Employee Registration Form </h3>
+            <label for="fname">Full name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+
+            <label for="dept">Department: </label><br>
+            <select id="dept" name="dept">
+                <option value="hr">HR</option>
+                <option value="it">IT</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+            </select>
+            <br>
+
+            <label for="id">Employee ID:</label><br>
+            <input type="text" id="id" name="id"><br>
+
+            <label for="url">Profile Picture URL</label><br>
+            <input type="text" id="url" name="url"><br>
+            <button>Register Employee</button>
+        </form>
+
+
+        <div class="list">
+            <h3>Employee List</h3>
+            <ol>
+                <li><a href="mailto:john.doe@example.com">John Doe</a> - john.doe@example.com</li> 
+                <li><a href="mailto:jane.smith@example.com">Jane Smith</a> - jane.smith@example.com</li>
+            </ol>
+
+        </div>
+
+
+        <div class="tablediv">
+        <table class="table" > 
+            <thead>
+                <tr>
+                    <th colspan="4" >Employee Details</th>
+                </tr>
+                <tr >
+                    <td>Name</td>
+                    <td>Employee ID</td>
+                    <td>Department</td>
+                    <td>Profile Picture</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr >
+                    <td >John Doe</td>
+                    <td >12345</td>
+                    <td>IT</td>
+                    <td><img src="https://via.placeholder.com/50" alt="John's Profile Picture"></td>
+                </tr>
+                <tr >
+                    <td>Jane Smith</td>
+                    <td>6789</td>
+                    <td>HR</td>
+                    <td><img src="https://via.placeholder.com/50" alt="John's Profile Picture"></td>
+
+                </tr>
+            </tbody>   
+        </table>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
