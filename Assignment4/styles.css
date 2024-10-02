@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+.contact-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+.contact-bar p {
+    margin: 0;
+}
+
+.contact-bar span {
+    margin-right: 15px;
+}
+
+.contact-bar i {
+    margin-right: 5px;
+    color: #ffcc00;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #f00;
+}
+
+.nav-links li:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.pay-now {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.pay-now:hover {
+    background-color: #f00;
+    color: white;
+}
+
+.what-we-are {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.what-we-are h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.box {
+    flex: 1 1 22%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.box i {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1em;
+    color: #333;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.courses-section {
+    background-color: #000;
+    color: white;
+    padding: 40px 0;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.course-box {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.course-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.course-box p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.course-box button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.course-box button:hover {
+    background-color: #0056b3;
+}
+
+.collaboration-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-color: #000 solid;
+}
+
+.collaboration-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlights-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.highlight-box {
+    background-color: red;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px 15px;
+    color: white;
+    text-align: center;
+}
+
+.static-text {
+    max-width: 600px;
+    text-align: center;
+    color: #333;
+}
+
+.reviews-section {
+    padding: 20px;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.review-box {
+    flex: 1;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.video-container {
+    flex: 0 0 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+}
+
+.success-stories-section {
+    padding: 40px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.success-stories-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.success-stories {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.story-box {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.story-box h3 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+.story-box p {
+    font-size: 1rem;
+    color: #ddd;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.blogs-section {
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+.blogs-section h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.blogs-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.blog-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.blog-box h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+}
+
+.blog-box p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.blog-box a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-box a:hover {
+    text-decoration: underline;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-box {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .box, .course-box {
+        flex: 1 1 45%;
+    }
+
+    .story-box {
+        width: 100%;
+    }
+
+    .blog-box {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .box, .course-box {
+        flex: 1 1 100%;
+    }
+
+    .box i {
+        font-size: 30px;
+    }
+
+    .box h3, .course-box h3 {
+        font-size: 1.2em;
+    }
+}
