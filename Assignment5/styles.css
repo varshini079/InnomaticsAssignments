@@ -1,0 +1,86 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Sticky Header */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #343a40;
+    padding: 1rem;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #343a40;
+    }
+}
+
+/* Content Section */
+.content-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.content-section:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.content-section h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Card Styles */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.feature-card {
+    background-color: #f1f1f1;
+}
+
+.service-card {
+    background-color: #e9ecef;
+}
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+/* Custom Buttons */
+.btn-custom {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Social Icons */
+.social-icons a {
+    margin: 0 15px;
+    color: white;
+    font-size: 1.5rem;
+}
